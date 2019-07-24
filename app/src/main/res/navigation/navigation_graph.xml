@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_graph" app:startDestination="@id/quizSourceFragment">
+
+    <fragment android:id="@+id/quizSourceFragment"
+              android:name="com.example.quizapp.ui.QuizListFragment"
+              android:label="PictureSourceFragment">
+        <action android:id="@+id/action_quizSourceFragment_to_quizDetailsFragment"
+                app:destination="@id/quizDetailsFragment">
+
+        </action>
+    </fragment>
+    <fragment android:id="@+id/quizDetailsFragment" android:name="com.example.quizapp.ui.QuizDetailsFragment"
+              android:label="QuizDetailsFragment"/>
+</navigation>
